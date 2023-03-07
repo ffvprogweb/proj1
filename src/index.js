@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Componente1 from "./componentes/Componente1";
+import Componente2 from "./componentes/Componente2";
+import Componente3 from "./componentes/Componente3";
+import Card from "./componentes/Card";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Card titulo="Fundamentos react">
+      <Componente1 />
+    </Card>
+    <Componente2 name="Jose" tool="eclipse" />
+    <Componente3 parcela1={5} parcela2={2} />
   </React.StrictMode>
 );
 

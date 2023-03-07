@@ -1,0 +1,19 @@
+.Card {
+  /* cor da barra superior e inferior dentro da borda de contorno */
+  background-color: red;
+  color: #fff;
+  /* cor da borda de contorno */
+  border: 3px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* modifica a cor na linha do titulo no card */
+.Card .Title {
+  background-color: red;
+  display: flex;
+}
+/* modifica a cor no conteudo do card */
+.Card .Content {
+  background-color: #fff;
+  color: #000;
+}
